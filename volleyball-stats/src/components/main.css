@@ -1,0 +1,21 @@
+.top{
+  text-align: center;
+  color: blue;
+  border: solid;
+  background-color: grey;
+}
+.submit-button{
+  color: blue;
+  background-color: grey;
+  width: 300px;
+  font-size: 20px;
+}
+.signup{
+  color: blue;
+  background-color: grey;
+  width: 300px;
+  font-size: 20px;
+}
+.login{
+ color:blue;
+}
