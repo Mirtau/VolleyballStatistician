@@ -12,6 +12,9 @@ import Score from './components/Score'
 import Serve from './components/Serve'
 import Receive from './components/Receive'
 import Set from './components/Set'
+import Attack from './components/Attack'
+import Block from './components/Block'
+import Dig from './components/Dig'
 
 class App extends Component {
   render() {
@@ -26,7 +29,11 @@ class App extends Component {
       {/* <NewGame /> */}
       {/* <Score /> */}
       {/* <Receive /> */}
-      <Set />
+      {/* <Set /> */}
+      {/* <Attack /> */}
+      <Dig />
+
+
       </div>
     );
   }
