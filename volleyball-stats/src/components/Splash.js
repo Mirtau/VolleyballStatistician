@@ -1,8 +1,11 @@
 import React, {Component} from 'react'
 import './main.css'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import RaisedButton from 'material-ui/RaisedButton';
-import TextField from 'material-ui/TextField';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import RaisedButton from 'material-ui/RaisedButton'
+import TextField from 'material-ui/TextField'
+
+
+
 class Splash extends Component {
 constructor(props){
   super(props);
@@ -11,6 +14,7 @@ constructor(props){
   password:''
   }
  }
+
 render(){
   return(
     <div>
@@ -29,18 +33,19 @@ render(){
                floatingLabelText="Password"
                onChange = {(event,newValue) => this.setState({password:newValue})}  />
              <br/>
-             <button className='submit-button'
-               onClick={(event) => this.handleClick(event)}>Submit</button>
+              <RaisedButton label="Submit" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
                <br/>
-              <button className='signup'>Sign Up</button>
+               <RaisedButton label="Sign Up" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
+                <br/>
          </div>
          </MuiThemeProvider>
       </div>
     );
   }
 }
+
 const style = {
- margin: 15,
+  margin: 15,
 };
 
 export default Splash
