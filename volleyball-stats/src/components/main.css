@@ -1,10 +1,26 @@
 .top{
+
   text-align: center;
   color: blue;
   border: solid;
   background-color: grey;
+
 }
 
 .login{
  color:blue;
+}
+
+.home, .home1{
+display: inline-block;
+}
+.home{
+align:left;
+background-color: grey;
+border-color: grey;
+color: blue;
+font-size: 20px;
+}
+.newseason, .newplayer, .signup, .newgame, .score, .serve, .receive, .set, .attack, .block, .dig{
+  color: blue;
 }
