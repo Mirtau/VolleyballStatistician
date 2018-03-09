@@ -21,6 +21,13 @@ border-color: grey;
 color: blue;
 font-size: 20px;
 }
-.newseason, .newplayer, .signup, .newgame, .score, .serve, .receive, .set, .attack, .block, .dig{
+.start, .newseason, .newplayer, .signup, .newgame, .score, .serve, .receive, .set, .attack, .block, .dig{
   color: blue;
+}
+.start{
+  align-self: center;
+  border: solid;
+}
+.vs {
+  color: red;
 }

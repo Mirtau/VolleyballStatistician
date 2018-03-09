@@ -15,6 +15,7 @@ import Set from './components/Set'
 import Attack from './components/Attack'
 import Block from './components/Block'
 import Dig from './components/Dig'
+import Start from './components/Start'
 
 class App extends Component {
   render() {
@@ -31,8 +32,8 @@ class App extends Component {
       {/* <Receive /> */}
       {/* <Set /> */}
       {/* <Attack /> */}
-      <Dig />
-
+      {/* <Dig /> */}
+      <Start />
 
       </div>
     );
