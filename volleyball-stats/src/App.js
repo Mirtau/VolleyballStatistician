@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import logo from './logo.svg';
+import { Spinner } from '@blueprintjs/core'
 import './App.css';
 import Header from './components/Header'
 import Splash from './components/Splash'
@@ -16,27 +18,71 @@ import Attack from './components/Attack'
 import Block from './components/Block'
 import Dig from './components/Dig'
 import Start from './components/Start'
+import {app, base} from './base'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      authenticated: false,
+      loading: true
+    }
+  }
+componentWillMount() {
+  this.removeAuthListener = app.auth().onAuthStateChanged((user)=> {
+    if(user) {
+      this.setState({
+        authenticated: true,
+        loading: false
+      })
+    }
+    else {
+      this.setState({
+        authenticated: false,
+        loading: false
+      })
+    }
+  })
+}
+componentWillUnmount() {
+  this.removeAuthListener()
+}
   render() {
+
+      if(this.state.loading === true) {
+        return(
+          <div style ={{textAlign: 'center', position: 'absolute', top: '25%', left: '50%'}}>
+            <h3>Loading</h3>
+            <Spinner />
+          </div>
+        )
+      }
+
     return (
+      <Router>
       <div className="App">
       <Header />
-      {/* <Splash /> */}
+      <Route exact path="/" render={() => (
+           <div className='container-fluid'>
+             <Splash />
+           </div>
+         )}/>
+
       {/* <Signup /> */}
       {/* <NewPlayer /> */}
       {/* <NewSeason /> */}
-      {/* <Login /> */}
+      <Login />
       {/* <NewGame /> */}
       {/* <Score /> */}
       {/* <Receive /> */}
       {/* <Set /> */}
       {/* <Attack /> */}
       {/* <Dig /> */}
-      <Start />
+      {/* <Start /> */}
 
       </div>
-    );
+    </Router>
+      );
   }
 }
 

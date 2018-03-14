@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
   table.integer('season_id').notNullable()
   table.integer('game_id').notNullable()
   table.integer('statName_id').notNullable()
-  table.string('resultName_id').notNullable()
+  table.integer('resultName_id').notNullable()
   })
 
 };

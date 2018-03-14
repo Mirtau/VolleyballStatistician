@@ -15,8 +15,8 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <table className="start">
-            <h2 className='player'>Selected Player</h2>
-            <h3>Team</h3>
+            <h2 className='player'>Jane Smith</h2>
+            <h3>fighting figs</h3>
             <h3 className='vs'>vs</h3>
             <h3>Opponent</h3>
             <h3>mm/dd/yyyy</h3>
