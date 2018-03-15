@@ -18,6 +18,7 @@ import Attack from './components/Attack'
 import Block from './components/Block'
 import Dig from './components/Dig'
 import Start from './components/Start'
+import Logout from './components/Logout'
 import {app, base} from './base'
 
 class App extends Component {
@@ -64,21 +65,22 @@ componentWillUnmount() {
       <Header />
       <Route exact path="/" render={() => (
            <div className='container-fluid'>
-             <Splash />
+             <Start />
            </div>
          )}/>
 
       {/* <Signup /> */}
-      {/* <NewPlayer /> */}
-      {/* <NewSeason /> */}
-      <Login />
-      {/* <NewGame /> */}
-      {/* <Score /> */}
-      {/* <Receive /> */}
-      {/* <Set /> */}
-      {/* <Attack /> */}
-      {/* <Dig /> */}
-      {/* <Start /> */}
+      <Route exact path = "/NewPlayer" component = {NewPlayer} />{/* <NewPlayer /> */}
+      <Route exact path = "/NewSeason" component = {NewSeason} />{/* <NewSeason /> */}
+      <Route exact path = "/Login" component = {Login} />
+      <Route exact path = "/Logout" component = {Logout} />
+      <Route exact path = "/NewGame" component = {NewGame} />{/* <NewGame /> */}
+      <Route exact path = "/Score" component = {Score} />{/* <Score /> */}
+      <Route exact path = "/Receive" component = {Receive} />{/* <Receive /> */}
+      <Route exact path = "/Set" component = {Set} />{/* <Set /> */}
+      <Route exact path = "/Attack" component = {Attack} />{/* <Attack /> */}
+      <Route exact path = "/Dig" component = {Dig} />{/* <Dig /> */}
+      <Route exact path = "/Start" component = {Start} />{/* <Start /> */}
 
       </div>
     </Router>
