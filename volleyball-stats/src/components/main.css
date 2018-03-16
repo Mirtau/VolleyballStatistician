@@ -1,32 +1,42 @@
 .top{
-
-  text-align: center;
   color: blue;
   border: solid;
-  background-color: grey;
-
+  background-color: #FED000;
 }
 
 .login{
  color:blue;
 }
+.home1{
+  text-align: center;
 
-.home, .home1{
+}
+.home, .home1, .logout{
 display: inline-block;
+text-align: center;
 }
 .home{
-align:left;
-background-color: grey;
-border-color: grey;
-color: blue;
+text-align: left;
+background-color: #FEA500;
+color: 	#00B2D6;
 font-size: 20px;
+display: inline-block;
+}
+.logout{
+  background-color: #FEA500;
+  font-size: 20px;
+  text-align: right;
+  color: 	#00B2D6;
+  display: inline-block;
 }
 .start, .newseason, .newplayer, .signup, .newgame, .score, .serve, .receive, .set, .attack, .block, .dig{
-  color: blue;
+  color: #0024BA;
+
 }
 .start{
-  align-self: center;
-  border: solid;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 .vs {
   color: red;
@@ -40,11 +50,23 @@ font-size: 20px;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
-  color: darkblue;
-  background-color: lightgreen;
+  color: #0024BA;
+  background-color: #FFA500;
+}
+.starter{
+  width: 50%;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: list-item;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  color: #0024BA;
+  background-color: #FFA500;
 }
 .box{
-  background-color: lightblue;
+  background-color: #007AC7;
   display: block;
   margin-left: 12.5%;
   margin-right: auto;
@@ -56,6 +78,7 @@ font-size: 20px;
 .container{
   width: 100%;
   height: auto;
+  background-color: #FEFB00;
 }
 .finish{
   color: darkblue;

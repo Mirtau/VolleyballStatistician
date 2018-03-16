@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './main.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import RaisedButton from 'material-ui/RaisedButton'
-import TextField from 'material-ui/TextField'
+import { Link } from 'react-router-dom'
 
 class Start extends Component {
 constructor(props) {
@@ -11,7 +11,8 @@ constructor(props) {
 }
   render() {
     return(
-      <div>
+      <div className='container'>
+      <div className='box'>
         <MuiThemeProvider>
           <div>
             <table className="start">
@@ -21,11 +22,11 @@ constructor(props) {
             <h3>Opponent</h3>
             <h3>mm/dd/yyyy</h3>
             </table>
-
-              <RaisedButton className='start' label="Start" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
           </div>
+              <button className='start' ><Link to='/score'>Start Scoring</Link></button>
         </MuiThemeProvider>
       </div>
+    </div>
     )
   }
   }

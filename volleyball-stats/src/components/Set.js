@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './main.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import RaisedButton from 'material-ui/RaisedButton'
+import { Link } from 'react-router-dom'
 
 class Set extends Component {
 constructor(props) {
@@ -14,12 +14,11 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <h1 className="set">Set</h1>
-              <RaisedButton label="Assist" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-              <RaisedButton label="In Play" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-              <RaisedButton label="Fault" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-          </div>
+            <button className="links" id = 'Assist'><Link to="/StatRecorded">Assist</Link></button>
+            <button className="links" id = 'InPlay'><Link to="/StatRecorded">In Play</Link></button>
+            <button className="links" id = 'setFault'><Link to="/StatRecorded">Fault</Link></button>
+
+            </div>
         </MuiThemeProvider>
       </div>
     )

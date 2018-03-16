@@ -66,7 +66,7 @@ componentWillUnmount() {
       <Header />
       <Route exact path="/" render={() => (
            <div className='container-fluid'>
-             <Start />
+             <Splash/>
            </div>
          )}/>
 

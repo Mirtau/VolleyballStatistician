@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './main.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import RaisedButton from 'material-ui/RaisedButton'
+import { Link } from 'react-router-dom'
 
 class Receive extends Component {
 constructor(props) {
@@ -10,21 +10,18 @@ constructor(props) {
 }
   render() {
     return(
-      <div>
+      <div className="container">
+      <div className='box'>
         <MuiThemeProvider>
           <div>
             <h1 className="receive">Receive</h1>
-              <RaisedButton label="Execellent" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-              <RaisedButton label="Good" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-              <RaisedButton label="In Play" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-              <RaisedButton label="Fault" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-
+            <button className="links" id = 'Excellent'><Link to="/StatRecorded">Excellent</Link></button>
+            <button className="links" id = 'Good'><Link to="/StatRecorded">Good</Link></button>
+            <button className="links" id = 'InPlay'><Link to="/StatRecorded">In Play</Link></button>
+            <button className="links" id = 'receiveFault'><Link to="/StatRecorded">Fault</Link></button>
           </div>
         </MuiThemeProvider>
+      </div>
       </div>
     )
   }

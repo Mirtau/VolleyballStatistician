@@ -42,9 +42,9 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <h1 className="score">Score</h1>
-              <button className="links" id = 'serve'><Link to="/Serve">serve</Link></button>
+              <button className="links" id = 'serve'><Link to="/Serve">Serve</Link></button>
 
-              <button className="links" id = 'receive'><Link to='/Receive'>receive</Link></button>
+              <button className="links" id = 'receive'><Link to='/Receive'>Receive</Link></button>
 
               <button className="links" id ='set'><Link to="/Set">Set</Link></button>
 
