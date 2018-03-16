@@ -13,7 +13,7 @@ constructor(props) {
       <div>
         <MuiThemeProvider>
           <div>
-            <h1 className="serve">Score</h1>
+            <h1 className="serve">Serve</h1>
               <RaisedButton label="Ace" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
               <br/>
               <RaisedButton label="In Play" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>

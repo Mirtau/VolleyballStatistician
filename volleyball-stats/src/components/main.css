@@ -31,3 +31,30 @@ font-size: 20px;
 .vs {
   color: red;
 }
+.links{
+  width: 50%;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: list-item;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  color: darkblue;
+  background-color: lightgreen;
+}
+.box{
+  background-color: lightblue;
+  display: block;
+  margin-left: 12.5%;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 75%;
+  position: absolute;
+  padding-bottom: 10%;
+}
+.container{
+  width: 100%;
+  height: auto;
+
+}

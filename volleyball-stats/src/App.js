@@ -81,7 +81,8 @@ componentWillUnmount() {
       <Route exact path = "/Attack" component = {Attack} />{/* <Attack /> */}
       <Route exact path = "/Dig" component = {Dig} />{/* <Dig /> */}
       <Route exact path = "/Start" component = {Start} />{/* <Start /> */}
-
+      <Route exact path = "/Serve" component = {Serve} />{/* <Start /> */}
+      <Route exact path = "/Block" component = {Block} />
       </div>
     </Router>
       );
