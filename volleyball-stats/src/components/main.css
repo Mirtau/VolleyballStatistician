@@ -56,5 +56,9 @@ font-size: 20px;
 .container{
   width: 100%;
   height: auto;
-
+}
+.finish{
+  color: darkblue;
+  border-radius: 20px;
+  font-size: 40px;
 }

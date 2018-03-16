@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './main.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import RaisedButton from 'material-ui/RaisedButton'
+import { Link } from 'react-router-dom'
 
 class Block extends Component {
 constructor(props) {
@@ -10,24 +10,20 @@ constructor(props) {
 }
   render() {
     return(
-      <div>
+      <div className="container">
+      <div className='box'>
         <MuiThemeProvider>
           <div>
             <h1 className="block">Block</h1>
-              <RaisedButton label="Block" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-              <RaisedButton label="In Play" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-              <RaisedButton label="Touch" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
-              <br/>
-              <RaisedButton label="Fault" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
+            <button className="links" id = 'Block'><Link to="/StatRecorded">Block</Link></button>
+            <button className="links" id = 'InPlay'><Link to="/StatRecorded">In Play</Link></button>
+            <button className="links" id = 'touch'><Link to="/StatRecorded">Touch</Link></button>
+            <button className="links" id = 'blockFault'><Link to="/StatRecorded">Fault</Link></button>
           </div>
         </MuiThemeProvider>
+      </div>
       </div>
     )
   }
   }
-  const style = {
-    margin: 15,
-}
 export default Block

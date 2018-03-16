@@ -10,9 +10,10 @@ constructor(props) {
 }
   render() {
     return(
-      <div>
+      <div className="container">
+      <div className='box'>
         <MuiThemeProvider>
-          <div>
+          <div >
             <h1 className="serve">Attack</h1>
               <RaisedButton label="Kill" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
               <br/>
@@ -22,6 +23,7 @@ constructor(props) {
           </div>
         </MuiThemeProvider>
       </div>
+    </div>
     )
   }
   }

@@ -19,6 +19,7 @@ import Block from './components/Block'
 import Dig from './components/Dig'
 import Start from './components/Start'
 import Logout from './components/Logout'
+import StatRecorded from './components/StatRecorded'
 import {app, base} from './base'
 
 class App extends Component {
@@ -83,6 +84,7 @@ componentWillUnmount() {
       <Route exact path = "/Start" component = {Start} />{/* <Start /> */}
       <Route exact path = "/Serve" component = {Serve} />{/* <Start /> */}
       <Route exact path = "/Block" component = {Block} />
+      <Route exact path = "/StatRecorded" component = {StatRecorded} />
       </div>
     </Router>
       );
