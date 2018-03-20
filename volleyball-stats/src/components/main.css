@@ -6,13 +6,7 @@
   font-family: 'Poppins', sans-serif;
 
 }
-.start{
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 40px;
-  background-color: #02C39A;
-  border-color: #94a4b69e;
-}
+
 
 .links{
   width: 55%;
@@ -26,11 +20,14 @@
   color: black;
   background-color: #00A896;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 5px;
+
 }
 .tolinks{
   text-decoration: none;
   border-radius: 10px;
   background-color: #00A896;
+  padding-top: 15px;
 }
 .starter{
   width: 50%;
@@ -46,12 +43,10 @@
 }
 .box{
   background-color: #94a4b69e;
-
   margin-left: 30%;
   margin-right: 30%;
   border-radius: 10px;
   width: 40%;
-  position: absolute;
   align: center;
   padding-bottom: 5%;
 
@@ -67,21 +62,23 @@
   font-size: 40px;
 }
 .selectPlayer{
-  background-color: #00A896;
+  background-color: #00A896;;
   font-size: 20px;
   border-radius: 10px;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  text-decoration: none;
+  border-color: #00A896;
 }
 .newplayer{
+  border-color: #00A896;
   background-color: #00A896;
   font-size: 20px;
   border-radius: 10px;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  margin-left: 5px;
 }
 .input{
   padding-right: 5px;
-}
-.playerphoto{
-  float:left;
-  width: 200px;
-  height:auto;
-  opacity: 100%;
 }

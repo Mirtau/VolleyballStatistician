@@ -12,7 +12,7 @@ constructor(props) {
   render() {
     return(
       <div className='container'>
-      <div className='box' id='fade'>
+      <div className='startbox'>
         <img className='playerphoto'  src={require("../comimages/kaileyserve.jpg")}/>
         <MuiThemeProvider>
           <div>
@@ -25,7 +25,7 @@ constructor(props) {
             </table>
           </div>
               <Link to='/Score' className="tolinks"><button className='sbutton' >Start Scoring</button></Link>
-              <Link to='ViewStats' className='tolinks'><button className='sbutton'>See Stats</button></Link>
+              <Link to='/ViewStats' className="tolinks"><button className='sbutton'>See Stats</button></Link>
         </MuiThemeProvider>
       </div>
     </div>

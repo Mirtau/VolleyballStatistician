@@ -10,7 +10,8 @@ constructor(props) {
 }
   render() {
     return(
-      <div>
+      <div className = 'container'>
+      <div className ='box'>
         <MuiThemeProvider>
           <div>
             <h1 className="serve">Serve</h1>
@@ -20,6 +21,7 @@ constructor(props) {
           </div>
         </MuiThemeProvider>
       </div>
+    </div>
     )
   }
   }

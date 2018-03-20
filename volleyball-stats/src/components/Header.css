@@ -11,12 +11,14 @@ text-align: left;
 background-color: #00A896;
 font-size: 20px;
 display: inline-block;
+color: black;
 }
 .logout{
   background-color: #00A896;
   font-size: 20px;
   text-align: right;
   display: inline-block;
+  color: black;
 }
 .home1{
   text-align: center;

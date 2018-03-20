@@ -1,0 +1,20 @@
+.seasonhead{
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+}
+.label{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+  text-align: left;
+}
+.statbox{
+  background-color: #94a4b69e;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 10px;
+  width: 60%;
+  align: center;
+  padding-bottom: 5%;
+
+}
