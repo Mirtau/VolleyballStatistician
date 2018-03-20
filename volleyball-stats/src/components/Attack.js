@@ -15,9 +15,9 @@ constructor(props) {
         <MuiThemeProvider>
           <div >
             <h1 className="serve">Attack</h1>
-            <button className="links" id = 'kill'><Link to="/StatRecorded">Kill</Link></button>
-            <button className="links" id = 'InPlay'><Link to="/StatRecorded">In Play</Link></button>
-            <button className="links" id = 'blockFault'><Link to="/StatRecorded">Fault</Link></button>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'kill'>Kill</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'InPlay'>In Play</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'blockFault'>Fault</button></Link>
             </div>
         </MuiThemeProvider>
       </div>
@@ -25,7 +25,5 @@ constructor(props) {
     )
   }
   }
-  const style = {
-    margin: 15,
-}
+
 export default Attack

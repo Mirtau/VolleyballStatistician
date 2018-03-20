@@ -1,48 +1,21 @@
-.top{
-  color: blue;
-  border: solid;
-  background-color: #FED000;
-}
 
-.login{
- color:blue;
-}
-.home1{
-  text-align: center;
 
-}
-.home, .home1, .logout{
-display: inline-block;
-text-align: center;
-}
-.home{
-text-align: left;
-background-color: #FEA500;
-color: 	#00B2D6;
-font-size: 20px;
-display: inline-block;
-}
-.logout{
-  background-color: #FEA500;
-  font-size: 20px;
-  text-align: right;
-  color: 	#00B2D6;
-  display: inline-block;
-}
+
 .start, .newseason, .newplayer, .signup, .newgame, .score, .serve, .receive, .set, .attack, .block, .dig{
-  color: #0024BA;
+  color: black;
+  font-family: 'Poppins', sans-serif;
 
 }
 .start{
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 40px;
+  background-color: #02C39A;
+  border-color: #94a4b69e;
 }
-.vs {
-  color: red;
-}
+
 .links{
-  width: 50%;
+  width: 55%;
   border-radius: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -50,8 +23,14 @@ display: inline-block;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
-  color: #0024BA;
-  background-color: #FFA500;
+  color: black;
+  background-color: #00A896;
+  font-family: 'Poppins', sans-serif;
+}
+.tolinks{
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #00A896;
 }
 .starter{
   width: 50%;
@@ -62,26 +41,47 @@ display: inline-block;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
-  color: #0024BA;
-  background-color: #FFA500;
+  color: black;
+  background-color: #00A896;
 }
 .box{
-  background-color: #007AC7;
-  display: block;
-  margin-left: 12.5%;
-  margin-right: auto;
+  background-color: #94a4b69e;
+
+  margin-left: 30%;
+  margin-right: 30%;
   border-radius: 10px;
-  width: 75%;
+  width: 40%;
   position: absolute;
-  padding-bottom: 10%;
+  align: center;
+  padding-bottom: 5%;
+
 }
 .container{
   width: 100%;
-  height: auto;
-  background-color: #FEFB00;
+  height: 100%;
+  padding-top: 20px;
 }
 .finish{
-  color: darkblue;
+  color: darkblack;
   border-radius: 20px;
   font-size: 40px;
+}
+.selectPlayer{
+  background-color: #00A896;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.newplayer{
+  background-color: #00A896;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.input{
+  padding-right: 5px;
+}
+.playerphoto{
+  float:left;
+  width: 200px;
+  height:auto;
+  opacity: 100%;
 }

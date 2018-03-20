@@ -1,11 +1,15 @@
 import React, {Component} from 'react'
 import './main.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import RaisedButton from 'material-ui/RaisedButton'
-import TextField from 'material-ui/TextField'
-import { Redirect } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 
+import { Link } from 'react-router-dom'
+const WebFont = require('webfontloader')
+
+WebFont.load({
+    google: {
+      families: ['Droid Sans', 'Droid Serif']
+    }
+  });
 class Score extends Component {
 constructor(props) {
   super(props)
@@ -42,17 +46,17 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <h1 className="score">Score</h1>
-              <button className="links" id = 'serve'><Link to="/Serve">Serve</Link></button>
+             <Link to="/Serve" className="tolinks"><button className="links" id = 'serve'>Serve</button></Link>
 
-              <button className="links" id = 'receive'><Link to='/Receive'>Receive</Link></button>
+              <Link to='/Receive' className="tolinks"><button className="links"  id = 'receive'>Receive</button></Link>
 
-              <button className="links" id ='set'><Link to="/Set">Set</Link></button>
+              <Link to="/Set" className="tolinks"><button className="links" id ='set'>Set</button></Link>
 
-              <button className="links" id = 'attack'><Link to='/Attack'>Attack</Link></button>
+              <Link to='/Attack' className="tolinks"><button className="links" id = 'attack'>Attack</button></Link>
 
-              <button className="links" id = 'block'><Link to='/Block'>Block</Link></button>
+              <Link to='/Block' className="tolinks"><button className="links" id = 'block'>Block</button></Link>
 
-              <button className="links" id = 'dig' ><Link to='/Dig'>Dig</Link></button>
+              <Link to='/Dig' className="tolinks"><button className="links" id = 'dig' >Dig</button></Link>
 
           </div>
         </MuiThemeProvider>
@@ -61,7 +65,5 @@ constructor(props) {
     )
   }
   }
-  const style = {
-    margin: 15,
-}
+
 export default Score

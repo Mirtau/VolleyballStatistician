@@ -14,16 +14,14 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <h1 className="serve">Serve</h1>
-            <button className="links" id = 'Ace'><Link to="/StatRecorded">Ace</Link></button>
-            <button className="links" id = 'InPlay'><Link to="/StatRecorded">In Play</Link></button>
-            <button className="links" id = 'ServeFault'><Link to="/StatRecorded">Fault</Link></button>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'Ace'>Ace</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'InPlay'>In Play</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'ServeFault'>Fault</button></Link>
           </div>
         </MuiThemeProvider>
       </div>
     )
   }
   }
-  const style = {
-    margin: 15,
-}
+
 export default Serve

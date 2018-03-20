@@ -15,10 +15,10 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <h1 className="receive">Receive</h1>
-            <button className="links" id = 'Excellent'><Link to="/StatRecorded">Excellent</Link></button>
-            <button className="links" id = 'Good'><Link to="/StatRecorded">Good</Link></button>
-            <button className="links" id = 'InPlay'><Link to="/StatRecorded">In Play</Link></button>
-            <button className="links" id = 'receiveFault'><Link to="/StatRecorded">Fault</Link></button>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'Excellent'>Excellent</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'Good'>Good</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'InPlay'>In Play</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'receiveFault'>Fault</button></Link>
           </div>
         </MuiThemeProvider>
       </div>
@@ -26,7 +26,5 @@ constructor(props) {
     )
   }
   }
-  const style = {
-    margin: 15,
-}
+
 export default Receive

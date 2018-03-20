@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import logo from './logo.svg';
 import { Spinner } from '@blueprintjs/core'
 import './App.css';
 import Header from './components/Header'

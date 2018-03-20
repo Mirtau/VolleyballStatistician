@@ -15,10 +15,10 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <h1 className="block">Block</h1>
-            <button className="links" id = 'Block'><Link to="/StatRecorded">Block</Link></button>
-            <button className="links" id = 'InPlay'><Link to="/StatRecorded">In Play</Link></button>
-            <button className="links" id = 'touch'><Link to="/StatRecorded">Touch</Link></button>
-            <button className="links" id = 'blockFault'><Link to="/StatRecorded">Fault</Link></button>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'Block'>Block</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'InPlay'>In Play</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'touch'>Touch</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'blockFault'>Fault</button></Link>
           </div>
         </MuiThemeProvider>
       </div>

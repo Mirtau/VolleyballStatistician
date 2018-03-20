@@ -10,19 +10,19 @@ constructor(props) {
 }
   render() {
     return(
-      <div>
+      <div className = 'container'>
+      <div className ='box'>
         <MuiThemeProvider>
           <div>
             <h1 className="dig">Dig</h1>
-            <button className="links" id = 'Dig'><Link to="/StatRecorded">Dig</Link></button>
-            <button className="links" id = 'Fault'><Link to="/StatRecorded">Fault</Link></button>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'Dig'>Dig</button></Link>
+            <Link to="/StatRecorded" className="tolinks"><button className="links" id = 'Fault'>Fault</button></Link>
             </div>
         </MuiThemeProvider>
       </div>
+    </div>
     )
   }
   }
-  const style = {
-    margin: 15,
-}
+
 export default Dig

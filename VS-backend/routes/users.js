@@ -8,10 +8,6 @@ const jwt = require('jsonwebtoken')
 const JWT_KEY = process.env.JWT_KEY
 const router = express.Router()
 
-router.get('/players', (req, res, next) => {
-  return res.status(200).send('here')
-})
-
 router.post('/users', (req, res, next) => {
   const {email, password} = req.body
   if(!email) {
@@ -34,31 +30,7 @@ router.post('/users', (req, res, next) => {
         const thePassword = req.body.password
         bcrypt.hash(thePassword, 12)
 
-      .then((hashPass) => {
-        return knex('users')
-          .insert({
-            first_name: req.body.firstName,
-            last_name: req.body.lastName,
-            email: req.body.email,
-            hashed_password: hashPass
-          }, '*')
-          .then((user) => {
-            const newObj = {
-              id: user[0].id,
-              firstName: user[0].first_name,
-              lastName: user[0].last_name,
-              email: user[0].email
-            }
-            const token = jwt.sign({ userId: user[0].id }, JWT_KEY)
-            res.cookie('token', token, {httpOnly: true})
-            res.status(200)
-            res.setHeader('Content-Type', 'application/json')
-            res.send(newObj)
-          })
-          .catch((err) => {
-            next(err)
-          })
-        })
+
       }
     })
 })
