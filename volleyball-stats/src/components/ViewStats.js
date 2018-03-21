@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './viewstats.css'
+import './main.css'
 import { Link } from 'react-router-dom'
 import { Table } from 'react-materialize'
 
@@ -11,6 +12,7 @@ constructor(props) {
   render() {
     return(
       <div className = 'container'>
+      <p className="disclaimer">Thank you for choosing volleyball statistician.  Please remember that sports stats can be subjective and your stats may not match the offical scorer</p>
       <div className ='statbox'>
         <p className = 'seasonhead'>Season Stats</p>
         <table className ='tables' options={{bordered: true}}>
