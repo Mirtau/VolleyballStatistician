@@ -122,7 +122,6 @@ constructor(props) {
         </table>
       </div>
     </div>
-
     )
   }
 }

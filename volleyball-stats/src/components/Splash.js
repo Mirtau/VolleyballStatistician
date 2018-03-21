@@ -19,7 +19,7 @@ render() {
           <p className="splash">Welcome to Volleyball Statistician</p>
           <p className="disclaimer">Thank you for choosing volleyball statistician.  Please remember that sports stats can be subjective and your stats may not match the offical scorer</p>
 
-          <Link to='/start' className="tolinks"><button className='starter'>Begin</button></Link>
+          <Link to='/Login' className="tolinks"><button className='starter'>Begin</button></Link>
          </div>
          </MuiThemeProvider>
       </div>

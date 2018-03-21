@@ -19,7 +19,7 @@ constructor(props) {
             <table className="start">
             <h2 className='player'>Jenni</h2>
             <h3>Fighting Figs</h3>
-            <h3 className='font-effect-fire-animation'>vs</h3>
+            <h3 className= 'vs'>vs</h3>
             <h3>Lazy Cats</h3>
             <h3>03/21/2018</h3>
             </table>

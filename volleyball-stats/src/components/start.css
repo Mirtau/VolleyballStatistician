@@ -25,13 +25,13 @@
   border-radius: 10px;
   background-color: #00A896;
   border-color: #94a4b69e;
-  width: 200px;
+  width: 40%;
   height: auto;
   margin-bottom: 10px;
 }
 .playerphoto{
   float:left;
-  width: 200px;
+  width: 45%;
   height:auto;
   opacity: 100%;
   border-radius: 10px;

@@ -15,10 +15,9 @@ constructor(props) {
     return(
       <div>
 
-          <p className="gameheader">New Game</p>
+          <p className="gameheader">New Match</p>
           <div>
             <Row className='gameinput'>
-
     <Input className ='ngame' label="Opponent" />
   </Row>
   <Row className='gameinput'>
