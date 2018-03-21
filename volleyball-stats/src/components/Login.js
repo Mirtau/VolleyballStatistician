@@ -81,25 +81,25 @@ render() {
       <Toaster ref = {(element) => {this.Toaster = element}} />
       <MuiThemeProvider>
         <div>
-          <form>
+          <form className='loginform'>
           <h3 className="login">Login</h3>
-
+          <p>email</p>
         <input
             type= 'email'
             ref = {(input) => {this.emailInput = input }}
             />
             <br/>
+            <p>password</p>
              <input
                type="password"
-
                ref = {(input) => {this.passwordInput = input }}
              />
 
              <br/>
-              <RaisedButton label="Submit" backgroundColor='grey' textcolor='blue' style={style} onClick={(event) =>
+              <RaisedButton label="Submit" backgroundColor='#00A896' textcolor='black' style={style} onClick={(event) =>
               this.authWithEmailPassword(event)} ref = {(form)=> {this.loginForm = form}} />
                <br/>
-               <RaisedButton label="Login with Facebook" backgroundColor='grey' textcolor='blue' style={style} onClick={() => this.authWithFacebook()}/>
+               <RaisedButton label="Login with Facebook" backgroundColor='#00A896' textcolor='black' style={style} onClick={() => this.authWithFacebook()}/>
                 <br/>
                 </form>
          </div>
