@@ -82,3 +82,21 @@
 .input{
   padding-right: 5px;
 }
+.input-field label{
+  color: black;
+  border-color: black;
+  }
+.gameinput{
+  padding-left: 30%
+}
+.gameheader{
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.input-field input[type=text] {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   .picker-input {
+     color: #000;
+   }

@@ -26,7 +26,7 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <h1 className='selectplayer'>Select Player</h1>
-            <Link to='/' className="tolinks" ><button className='selectPlayer'>Jenni Player</button></Link>
+            <Link to='/NewGame' className="tolinks" ><button className='selectPlayer'>Jenni Player</button></Link>
             <h1 className="titleplayer">New Player</h1>
             <input className='input' type = 'player'
               ref = {(input) => {this.playerInput = input }}/>

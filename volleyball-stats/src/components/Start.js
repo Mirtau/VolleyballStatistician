@@ -17,15 +17,15 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <table className="start">
-            <h2 className='player'>Jenni Tomzac</h2>
+            <h2 className='player'>Jenni</h2>
             <h3>Fighting Figs</h3>
             <h3 className='font-effect-fire-animation'>vs</h3>
             <h3>Lazy Cats</h3>
             <h3>03/13/2018</h3>
             </table>
           </div>
-              <Link to='/Score' className="tolinks"><button className='sbutton' >Start Scoring</button></Link>
-              <Link to='/ViewStats' className="tolinks"><button className='sbutton'>See Stats</button></Link>
+              <Link to='/Score' ><button className='sbutton' >Start Scoring</button></Link>
+              <Link to='/ViewStats' id ='gap'><button className='sbutton'>See Stats</button></Link>
         </MuiThemeProvider>
       </div>
     </div>

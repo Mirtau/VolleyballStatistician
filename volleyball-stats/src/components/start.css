@@ -5,13 +5,15 @@
 .sbutton{
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  width: 50%;
+  width: 48%;
   border-radius: 10px;
   background-color: #00A896;
   display: inline-block;
   color: black;
   border-color: #00A896;
-
+}
+#gap{
+  margin-left: 2px;
 }
 
 .vs {

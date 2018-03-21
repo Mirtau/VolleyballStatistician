@@ -3,6 +3,8 @@ import './main.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import RaisedButton from 'material-ui/RaisedButton'
 import TextField from 'material-ui/TextField'
+import {Link} from 'react-router-dom'
+import { Row, Input } from 'react-materialize'
 
 class NewGame extends Component {
 constructor(props) {
@@ -12,21 +14,22 @@ constructor(props) {
   render() {
     return(
       <div>
-        <MuiThemeProvider>
-          <div>
-            <h1 className="newgame">New Game</h1>
-            <TextField
-              hintText='Opponent'
-              floatingLabelText="game"
-            /><br />
-            <TextField
-              hintText='Date'
-              floatingLabelText="Date"
-            /><br />
 
-              <RaisedButton label="Create" backgroundColor='grey' textColor='blue' style={style} onClick={(event) => this.handleClick(event)}/>
+          <p className="gameheader">New Game</p>
+          <div>
+            <Row className='gameinput'>
+
+    <Input className ='ngame' label="Opponent" />
+  </Row>
+  <Row className='gameinput'>
+  <Input label= 'Date' name='on' type='date' onChange={function(e, value) {}} />
+</Row>
+
+            <div>
+            <Link to='/Start' className="tolinks" ><button className='selectPlayer'>Submit</button></Link>
+            </div>
           </div>
-        </MuiThemeProvider>
+
       </div>
     )
   }

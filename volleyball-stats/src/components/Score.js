@@ -59,6 +59,7 @@ constructor(props) {
               <Link to='/Dig' className="tolinks"><button className="links" id = 'dig' >Dig</button></Link>
 
           </div>
+          <Link to='/Start' className='finsih'><button>Finish Match</button></Link>
         </MuiThemeProvider>
       </div>
       </div>

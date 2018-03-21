@@ -15,7 +15,7 @@ constructor(props) {
         <MuiThemeProvider>
           <div>
             <p className='finish'> Stat Recorded !! </p>
-              <Link to='/Score' className="tolinks"><button>Score</button></Link>
+              <Link to='/Score' className="tolink"><button>Score</button></Link>
 
           </div>
         </MuiThemeProvider>
