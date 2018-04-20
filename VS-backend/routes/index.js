@@ -28,13 +28,28 @@ router.get('/stats', function(req, res, next) {
 router.get('/users', function(req, res, next) {
   knex('users')
   .then(data => {
-    console.log(data);
+
     res.status(200).send({data})
   })
   .catch(err => {next(err)})
 })
+router.post('/users', function(req, res, next) {
+  knex('users')
+  .insert(req.body)
+  .returning('id')
+  .then(data=> {
+res.status(200).send({data})
+})
+  .catch(err => {next(err)})
+  })
 
-// router.post('/players', function(req, res, next) {
-//
-// })
+router.post('/players', function(req, res, next) {
+  knex('players')
+  .insert(req.body)
+  .then(data => {
+    res.status(200).send({data})
+  })
+
+  .catch(err => {next(err)})
+})
 module.exports = router

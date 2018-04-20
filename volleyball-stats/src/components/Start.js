@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './main.css'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import 'normalize.css'
 import './start.css'
 
 import { Link } from 'react-router-dom'
@@ -14,7 +14,7 @@ constructor(props) {
       <div className='container'>
       <div className='startbox'>
         <img className='playerphoto'  src={require("../comimages/kaileyserve.jpg")}/>
-        <MuiThemeProvider>
+
           <div>
             <table className="start">
             <h2 className='player'>Jenni</h2>
@@ -26,7 +26,7 @@ constructor(props) {
           </div>
               <Link to='/Score' ><button className='sbutton' >Start Scoring</button></Link>
               <Link to='/ViewStats' id ='gap'><button className='sbutton'>See Stats</button></Link>
-        </MuiThemeProvider>
+
       </div>
     </div>
     )

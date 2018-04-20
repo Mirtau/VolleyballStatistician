@@ -5,6 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton'
 import { Redirect } from 'react-router-dom'
 import { Toaster, Intent } from '@blueprintjs/core'
 import { app, facebookProvider} from '../base'
+import  axios  from 'axios'
 
 class Login extends Component {
 constructor(props) {
@@ -20,16 +21,22 @@ constructor(props) {
  authWithFacebook() {
    app.auth().signInWithPopup(facebookProvider)
    .then((result, error)=> {
+      console.log('name >>>', result.user.displayName);
       console.log('result', (result.user.email));
 
-   fetch('http://localhost:3001/users/', {
-         method: 'Post',
-         body: JSON.stringify({
-           name: result.user.displayName,
-           email: result.user.email,
-           password: result.credential.accessToken
-         })
-      }).then(res => res.json())
+
+     axios.post('http://localhost:3001/users/', {
+       name: result.user.displayName,
+       email: result.user.email,
+       password: result.credential.accessToken
+})
+.then(function(response) {
+console.log(response);
+})
+.catch(function(error) {
+console.log(error);
+})
+
       .catch(error => console.error('error', error))
       .then(response =>console.log('Success:', response))
 
